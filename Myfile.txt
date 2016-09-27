@@ -1,1 +1,3 @@
-Hello, this is the respository of Kyla Julian
+Hello, this is the respository of Kyla Julian. 
+Completed my first commit and push
+
