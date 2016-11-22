@@ -81,3 +81,7 @@
 		p {
 			padding-top:50px;
 		}
+		h1 {
+			text-align:center; 
+			color:black;
+		}
