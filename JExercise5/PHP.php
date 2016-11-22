@@ -65,3 +65,11 @@
 			font-family: "Lucida Console", Monaco, monospace;
 			font-size:20px;
 		}
+		div.transbox {
+				margin: 200px;
+				background-color: #ffffff;
+				border: 1px solid black;
+				opacity: 0.6;
+				filter: alpha(opacity=60);
+				padding-bottom: 0.5;
+			}
