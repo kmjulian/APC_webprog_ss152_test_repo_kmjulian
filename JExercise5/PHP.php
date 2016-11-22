@@ -78,3 +78,6 @@
 			font-weight: bold;
 			color: #000000;
 		}
+		p {
+			padding-top: 50px;
+		}
