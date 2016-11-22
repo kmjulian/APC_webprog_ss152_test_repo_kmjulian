@@ -224,3 +224,63 @@
 			 }
 			}
 		</script>
+		<body>
+		<head>
+		<div style="padding-left:520px; padding-right:500px; padding-top: 250px">
+			<img src="http://fontmeme.com/embed.php?text=Majestic&name=Walker on the Moon Light.ttf & size=120 & style_color=000000" alt="Calligraphy Fonts" style="padding-top:7%"></a>
+		</div>
+		</head>
+		<br>
+		<center>
+		<hr>
+			<a href="homec.php" targetsel>HOME &nbsp; 
+			<a href="aboutc.php" targetsel>ABOUT &nbsp; 
+			<a href="galleryc.php" targetsel>GALLERY &nbsp; 
+			<a href="contactc.php" targetsel>CONTACT &nbsp;
+			<a href="trivia.php" targetsel>TRIVIA</a>
+		<hr>
+		</center>
+		<br>
+			<br>
+				<br>
+					<br>
+		<br>
+			<br>
+				<br>
+		<div class="transbox"
+		<table align="center" style="font-family:courier; font-size:18px;margin-top:2em;margin-bottom:4em;border:2px">
+			<table cellspacing="7" >
+				<tr><center>
+					<th style="font-size:25"><b>Name</b></th>
+					<th style="font-size:25"><b>Nickname</b></th>
+					<th style="font-size:25"><b>E-mail</th>
+					<th style="font-size:25"><b>Home</b></th>
+					<th style="font-size:25"><b>Gender</th>
+					<th style="font-size:25"><b>Mobile</th>
+					<th style="font-size:25"><b>Comment</th>
+					<th style="font-size:25" colspan="2"><b>etc..</b></th>
+				</center></tr>
+				<?php
+					$sql_query="SELECT * FROM users";
+					$result_set=mysqli_query($con,$sql_query);
+					while($row=mysqli_fetch_row($result_set))
+					{
+				?>
+				<tr>
+						<td><b><?php echo $row[2],'</b>, ', $row[1]; ?></td>
+						<!-- Name = First Name + Last Name -->
+						<td><?php echo $row[3]; ?></td>
+						<!-- Nickname -->
+						<td><?php echo $row[4]; ?></td>
+						<!-- Email -->
+						<td><?php echo $row[5]; ?></td>
+						<!-- Address -->
+						<td><?php echo $row[6]; ?></td>
+						<!-- Gender-->
+						<td><?php echo $row[7]; ?></td>
+						<!-- Mobile -->
+						<td><?php echo $row[8]; ?></td>
+						<!-- Comment -->
+						<td align="center"><a href="javascript:edt_id('<?php echo $row[0]; ?>')"><img src="edit.png" style="width:30px;height:30px" align="EDIT"></a></td>
+						<td align="center"><a href="javascript:delete_id('<?php echo $row[0]; ?>')"><img src="drop.png" style="width:30px;height:30px" align="DELETE"></a></td>
+					</tr>
