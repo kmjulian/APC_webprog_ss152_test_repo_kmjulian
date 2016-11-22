@@ -66,10 +66,15 @@
 			font-size:20px;
 		}
 		div.transbox {
-				margin: 200px;
-				background-color: #ffffff;
-				border: 1px solid black;
-				opacity: 0.6;
-				filter: alpha(opacity=60);
-				padding-bottom: 0.5;
-			}
+			margin: 200px;
+			background-color: #ffffff;
+			border: 1px solid black;
+			opacity: 0.6;
+			filter: alpha(opacity=60);
+			padding-bottom: 0.5;
+		}
+		div.transbox p {
+			margin: 5%;
+			font-weight: bold;
+			color: #000000;
+		}
