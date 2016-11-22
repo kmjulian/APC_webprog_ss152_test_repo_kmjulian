@@ -284,3 +284,10 @@
 						<td align="center"><a href="javascript:edt_id('<?php echo $row[0]; ?>')"><img src="edit.png" style="width:30px;height:30px" align="EDIT"></a></td>
 						<td align="center"><a href="javascript:delete_id('<?php echo $row[0]; ?>')"><img src="drop.png" style="width:30px;height:30px" align="DELETE"></a></td>
 					</tr>
+			<?php
+				}
+				?>
+				<tr>
+					<th colspan="9" style="text-align:center" class = "add"><a href="add.php">add data here</a></th>
+				</tr>
+			</table>
