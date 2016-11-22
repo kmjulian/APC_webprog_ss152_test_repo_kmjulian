@@ -208,3 +208,19 @@
 			src: url(shorelines.otf);
 		}
 		</style>
+		<script type="text/javascript">
+			function edt_id(id)
+			{
+			 if(confirm('Sure to edit ?'))
+			 {
+			  window.location.href='edit.php?edit_id='+id;
+			 }
+			}
+			function delete_id(id)
+			{
+			 if(confirm('Sure to Delete ?'))
+			 {
+			  window.location.href='form-home.php?delete_id='+id;
+			 }
+			}
+		</script>
