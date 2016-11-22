@@ -21,3 +21,11 @@
 			background-position: center;
 			background-size: 1600px 900px;
 		}
+		h1 {
+			color: #800000;
+			text-align: center;
+			font-family: "Arial Black", Gadget, sans-serif;
+			font-size: 50px;
+			padding-top: 20px;
+			margin-bottom:0.1em;
+		}
