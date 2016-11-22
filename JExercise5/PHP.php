@@ -58,3 +58,10 @@
 			font-family: "Lucida Console", Monaco, monospace;
 			font-size:20px;
 		}
+		a:active {
+			color:black;
+			background-color: transparent;
+			text-decoration: none;
+			font-family: "Lucida Console", Monaco, monospace;
+			font-size:20px;
+		}
