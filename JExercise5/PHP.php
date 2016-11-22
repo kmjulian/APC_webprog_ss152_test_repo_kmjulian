@@ -51,3 +51,10 @@
 			font-family: "Lucida Console", Monaco, monospace;
 			font-size: 20px;
 		}
+		a:visited {
+			color: #800000;
+			background-color:transparent;
+			text-decoration: none;
+			font-family: "Lucida Console", Monaco, monospace;
+			font-size:20px;
+		}
