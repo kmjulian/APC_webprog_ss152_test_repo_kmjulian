@@ -79,5 +79,5 @@
 			color: #000000;
 		}
 		p {
-			padding-top: 50px;
+			padding-top:50px;
 		}
