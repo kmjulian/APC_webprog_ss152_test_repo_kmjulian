@@ -29,3 +29,11 @@
 			padding-top: 20px;
 			margin-bottom:0.1em;
 		}
+		h2 {
+			color: #800000;
+			text-align: center;
+			font-family: "Arial Black", Gadget, sans-serif;
+			font-size: 20px;
+			margin-bottom:0.1em;
+			margin-top:0.1em;
+		}
