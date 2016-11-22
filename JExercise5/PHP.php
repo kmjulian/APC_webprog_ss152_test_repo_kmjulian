@@ -13,4 +13,11 @@
 		<title>
 			MAJESTIC
 		</title>
+		<style>
 		body {
+			background-image: url("Background.jpg");
+			background-repeat: no repeat;
+			background-attachment: fixed;
+			background-position: center;
+			background-size: 1600px 900px;
+		}
