@@ -149,3 +149,62 @@
 			padding-right:10%;
 			text-align: justify;
 		}
+		ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+		}
+			
+		#div.menu {
+				width:465px;
+				margin: 0 auto;
+				border:1px solid red;
+				text-align:center;
+		}
+		#menu {
+			margin: 0 auto;
+			text-align: center;
+		}
+		li {
+			float: left;
+		}
+		li a, .dropbtn {
+			display: inline-block;
+			color: white;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+		}
+		li.dropdown {
+			display: inline-block;
+		}
+		.dropdown-content {
+			display: none;
+			position: absolute;
+			min-width: 110px;
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			background-color: rgba(232,232,232,0.9);
+		}
+		.dropdown-content a {
+			color: black;
+			margin-top: 2;
+			text-decoration: none;
+			display: block;
+			text-align: center;
+		}
+			.dropdown-content a:hover {
+			color: #660066; 
+		}
+			.dropdown:hover .dropdown-content { 
+			display: block;
+		}
+		@font-face {
+			font-family: quicksand;
+			src: url(quicksand_book.otf);
+		}
+		@font-face {
+			font-family: amethyst;
+			src: url(shorelines.otf);
+		}
+		</style>
