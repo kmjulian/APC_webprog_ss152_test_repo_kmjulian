@@ -291,3 +291,13 @@
 					<th colspan="9" style="text-align:center" class = "add"><a href="add.php">add data here</a></th>
 				</tr>
 			</table>
+			</footer>
+	<hr>
+		<center>
+			<b><p style="color:#800000;margin-bottom:0.1em;font-size:40px;font-family:Impact, Charcoal, sans-serif">GET SOCIAL</b></p>
+			<center><p style="margin-top:0.1em;margin-bottom:0.1em"><a href="https://www.facebook.com/kylajuliannn"target="_blank"><img a src="fblogo.png" style="width:50px;height:50px"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+			<a href="https://www.instagram.com/kylajuliannn/?hl=en"target="_blank"><img src="iglogo.png" style="width:50px;height:50px;"></a></center>
+			<p style="font-size:12px;color:#800000;font-family:Impact, Charcoal, sans-serif;margin-top:0.1em"> Copyright 2016 MAJESTIC. </p>
+		</center>
+	</body>
+</html>		
