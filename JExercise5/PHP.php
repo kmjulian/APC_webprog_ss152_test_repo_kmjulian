@@ -13,3 +13,4 @@
 		<title>
 			MAJESTIC
 		</title>
+		body {
