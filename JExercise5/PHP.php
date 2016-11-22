@@ -120,3 +120,32 @@
 			width: 58%;
 			color: black;
 		}
+		#div-pic {
+			width: 120;
+			height: 120;
+		}
+		#normal {
+			font-size: 25;
+			padding-left:10%;
+			padding-right:10%;
+		}
+		#subcat {
+			display:inline-block;
+			border:1px;
+			padding:5px 0;
+		}
+		#extramenu {
+			width: 100%;
+			height: 10%;
+		}
+		#title {
+			font-size: 85;
+			height: 40;
+			padding: 20;
+		}
+		#just {
+			font-size: 25;
+			padding-left:10%;
+			padding-right:10%;
+			text-align: justify;
+		}
