@@ -85,3 +85,38 @@
 			text-align:center; 
 			color:black;
 		}
+		b {
+			font-style: strong;
+		}
+		div {
+			text-align:center;
+		}
+		p {
+			text-align: center;
+			font-size: 26;
+		}
+		table {
+			font-family: quicksand;
+			width: 100%;
+			font-size: 25;
+			padding-left: 70;
+			padding-right: 70;
+		}
+		th {
+			background:#FFD1DC;
+		}
+		th.add {
+			background:#c7b8e4;
+		}
+		td, th {
+			border: 3px solid #000000;
+			text-align: left;
+			padding: 10px;
+		}
+		td {
+			background-color: rgba(255,255,255,.5);
+		}
+		hr {
+			width: 58%;
+			color: black;
+		}
