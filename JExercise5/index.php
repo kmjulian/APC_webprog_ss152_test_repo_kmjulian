@@ -161,7 +161,7 @@ if(isset($_GET['delete_id']))
 			?>
 			<tr><td style="border:none; background:none">&nbsp;</td></tr>
 			<tr>
-				<th colspan="9" style="text-align:center" class = "add"><a href="add.php"> add date here </a></th>
+				<th colspan="9" style="text-align:center" class = "add"><a href="add.php"> add data here </a></th>
 			</tr>
 		</table>
     <hr>
