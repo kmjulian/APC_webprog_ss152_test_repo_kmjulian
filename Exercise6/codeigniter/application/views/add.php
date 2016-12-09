@@ -98,7 +98,7 @@
 		<body>
 			<head>
 			<div style="padding-left:520px; padding-right:500px; padding-top: 250px">
-			<img src="vic.png" alt="Signature Fonts" style="padding-top:7%"></a>
+			<img src="<?php echo base_url();?>/images/vic.png" alt="Signature Fonts" style="padding-top:7%"></a>
 			</div>
 			</head>
 			<br>
@@ -138,8 +138,8 @@
 				<input type="text" name="city_name" placeholder="City" required>
 				<br><br>
 				Gender: <br>
-				<input type="radio" name="gender" value="female" title="Female">&nbsp;<img src="female.png" style="width:35px;height:30px" title="Female">
-				<input type="radio" name="gender" value="male" title="Male"><img src="male.png" style="width:30px;height:30px" title="Male">
+				<input type="radio" name="gender" value="female" title="Female">&nbsp;<img src="<?php echo base_url();?>/images/female.png" style="width:35px;height:30px" title="Female">
+				<input type="radio" name="gender" value="male" title="Male"><img src="<?php echo base_url();?>/images/male.png" style="width:30px;height:30px" title="Male">
 				<br><br>
 				Mobile: <span class="error">* </span><br>
 				<input type="text" name="mobile" placeholder="Mobile Num" required>
@@ -154,8 +154,8 @@
 		<footer>
 			<center>
 				<b><p style="color:Black;margin-bottom:0.1em;margin-top:0.1em;font-size:25px;font-family:"Arial Black", Gadget, sans-serif;">GET SOCIAL</b></p>
-				<center><p style="margin-top:0.1em;margin-bottom:0.1em"><a href="https://www.facebook.com/kylajuliannn"target="_blank"><img a src="fblogo.png" style="width:50px;height:50px"></a>&nbsp;&nbsp;&nbsp;&nbsp;
-				<a href="https://www.instagram.com/kylajuliannn/?hl=en"target="_blank"><img src="iglogo.png" style="width:50px;height:50px;"></a></center>
+				<center><p style="margin-top:0.1em;margin-bottom:0.1em"><a href="https://www.facebook.com/kylajuliannn"target="_blank"><img a src="<?php echo base_url();?>/images/fblogo.png" style="width:50px;height:50px"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+				<a href="https://www.instagram.com/kylajuliannn/?hl=en"target="_blank"><img src="<?php echo base_url();?>/images/iglogo.png" style="width:50px;height:50px;"></a></center>
 				<p style="font-size:12px;color:Black;font-family:"Arial Black", Gadget, sans-serif;margin-top:0.1em"> Copyright 2016 VICTORIOUS. </p>
 			</center>
 		</footer>
