@@ -113,12 +113,12 @@ if(isset($_GET['delete_id']))
   		<div style = "background:#FBE7DC;">
   		<center>
   		<hr>
-  			<a href="homec.html" targetsel>HOME &nbsp;
-  			<a href="aboutc.html" targetsel>ABOUT &nbsp;
-  			<a href="galleryc.html" targetsel>GALLERY &nbsp;
-  			<a href="contactc.html" targetsel>CONTACT &nbsp;
-  			<a href="trivia.html" targetsel>TRIVIA &nbsp;
-        <a href="form-home" targetsel>FORM</a>
+  			<a href="homec.php" targetsel>HOME &nbsp;
+  			<a href="aboutc.php" targetsel>ABOUT &nbsp;
+  			<a href="galleryc.php" targetsel>GALLERY &nbsp;
+  			<a href="contactc.php" targetsel>CONTACT &nbsp;
+  			<a href="trivia.php" targetsel>TRIVIA &nbsp;
+        <a href="form-home.php" targetsel>FORM</a>
   		<hr>
   		<hr size="3px" width="58%" color="black">
   		<hr	size="3px" width="58%" color="black">
