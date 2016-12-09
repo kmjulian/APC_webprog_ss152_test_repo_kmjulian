@@ -112,7 +112,6 @@ if(isset($_GET['delete_id']))
 				<th style="font-size:30"><b>Gender</th>
 				<th style="font-size:30"><b>Mobile</th>
 				<th style="font-size:30"><b>Comment</th>
-				<th style="font-size:30" colspan="2"><b>etc..</b></th>
 			</center></tr>
 			<?php
 				$sql_query="SELECT * FROM users";
@@ -147,25 +146,13 @@ if(isset($_GET['delete_id']))
 			</tr>
 		</table>
 
-		<p style="text-align:center">
-			<img src="jolteon-m.gif" alt="pokemon-gif" style="width120px;height:120px">
-			<img src="donut.png" alt="donut" style="width:120px;height:120px">
-			<img src="donut.png" alt="donut" style="width:120px;height:120px">
-			<img src="donut.png" alt="donut" style="width:120px;height:120px">
-			<img src="jolteon.gif" alt="pokemon-gif" style="width:120px;height:120px">
-		</p>
-
-		<br>
-		<hr>
-
-		<div>
-			<p style="text-align:center; font-family:quicksand; font-size: 20; color:black">- - - Jimenez, Marc Adrian P. | BSCS-CN151 | APC - - -</p>
-			<p style="text-align:center; margin-top:0.5em">
-				<a href="https://www.facebook.com/jumanjimenez" target="_blank"><img src="facebook.jpg" alt= "facebook"style="width:60px;height:60px"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-				<a href="https://twitter.com/_eydriyan" target="_blank"><img src="twitter.jpg" alt="twitter" style="width:60px; height:60px"></a>
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-				<a href="https://www.instagram.com/_eydriyuhn/" target="_blank"><img src="instagram.jpg" alt="instagram" style="width:60px; height:60px"></a> .
-			</p>
-		</div>
+    <footer>
+      <center>
+        <b><p style="color:Black;margin-bottom:0.1em;margin-top:0.1em;font-size:25px;font-family:"Arial Black", Gadget, sans-serif;">GET SOCIAL</b></p>
+        <center><p style="margin-top:0.1em;margin-bottom:0.1em"><a href="https://www.facebook.com/kylajuliannn"target="_blank"><img a src="fblogo.png" style="width:50px;height:50px"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="https://www.instagram.com/kylajuliannn/?hl=en"target="_blank"><img src="iglogo.png" style="width:50px;height:50px;"></a></center>
+        <p style="font-size:12px;color:Black;font-family:"Arial Black", Gadget, sans-serif;margin-top:0.1em"> Copyright 2016 VICTORIOUS. </p>
+      </center>
+    </footer>
 	</body>
 </html>
