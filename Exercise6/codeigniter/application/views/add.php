@@ -121,16 +121,16 @@
 			<p><a href="form-home.php"><strong>*back to main page*</strong></a>
 				<br>
 				<br>
-				First Name: <span class="error">* <?php echo $first_nameErr;?></span><br>
+				First Name: <span class="error">* </span><br>
 				<input type="text" name="first_name" placeholder="First Name" required>
 				<br><br>
-				Last Name: <span class="error">* <?php echo $last_nameErr;?></span><br>
+				Last Name: <span class="error">* </span><br>
 				<input type="text" name="last_name" placeholder="Last Name" required>
 				<br><br>
-				Nickname: <span class="error">* <?php echo $nicknameErr;?></span><br>
+				Nickname: <span class="error">* </span><br>
 				<input type="text" name="nickname" placeholder="Nickname" required>
 				<br><br>
-				Email: <span class="error">* <?php echo $emailErr;?></span><br>
+				Email: <span class="error">*</span><br>
 				<input type="text" name="email" placeholder="Email Address" required>
 				<br>
 				<br>
@@ -141,7 +141,7 @@
 				<input type="radio" name="gender" value="female" title="Female">&nbsp;<img src="female.png" style="width:35px;height:30px" title="Female">
 				<input type="radio" name="gender" value="male" title="Male"><img src="male.png" style="width:30px;height:30px" title="Male">
 				<br><br>
-				Mobile: <span class="error">* <?php echo $mobileErr;?></span><br>
+				Mobile: <span class="error">* </span><br>
 				<input type="text" name="mobile" placeholder="Mobile Num" required>
 				<br><br>
 				Comment: <br>
