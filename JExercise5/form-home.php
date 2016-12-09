@@ -60,8 +60,29 @@ if(isset($_GET['delete_id']))
     }
     img {
       text-align:center;
-
     }
+    p{
+			text-align: center;
+			font-size: 20;
+		}
+		table {
+			font-family: quicksand;
+			width: 100%;
+			font-size: 25;
+			padding-left: 70;
+			padding-right: 70;
+		}
+		th{
+			background:#FFD1DC;
+		}
+		td, th {
+			border: 3px solid #000000;
+			text-align: left;
+			padding: 10px;
+		}
+		td{
+			background-color: rgba(255,255,255,.5);
+		}
     .error {
       color: #FF0000;
     }
