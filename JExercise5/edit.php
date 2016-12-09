@@ -196,7 +196,7 @@
   			<a href="galleryc.php" targetsel>GALLERY &nbsp;
   			<a href="contactc.php" targetsel>CONTACT &nbsp;
   			<a href="trivia.php" targetsel>TRIVIA &nbsp;
-        <a href="form-home.php" targetsel>FORM</a>
+        <a href="index.php" targetsel>FORM</a>
   		<hr>
   		<hr size="3px" width="58%" color="black">
   		<hr	size="3px" width="58%" color="black">
