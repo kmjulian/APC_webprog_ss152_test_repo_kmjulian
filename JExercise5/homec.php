@@ -1,6 +1,6 @@
 <html>
 	<title>
-		Exercise 3
+		Exercise5
 	</title>
 		<style>
 		body {
@@ -62,7 +62,7 @@
 		<center>
 		<hr>
 			<a href="homec.html" targetsel>HOME &nbsp;
-			<a href="aboutc.html" targetsel>ABOUT &nbsp; 
+			<a href="aboutc.html" targetsel>ABOUT &nbsp;
 			<a href="galleryc.html" targetsel>GALLERY &nbsp;
 			<a href="contactc.html" targetsel>CONTACT &nbsp;
 			<a href="trivia.html" targetsel>TRIVIA &nbsp;
