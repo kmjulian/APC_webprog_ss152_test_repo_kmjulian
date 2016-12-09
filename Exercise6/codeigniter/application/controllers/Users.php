@@ -6,6 +6,11 @@ class Users extends CI_Controller {
     $this->load->model('users_model');
   }
 
+  public function index(){
+    $data['user_list'] = $this->users_model->get_all_users();
+    $this->load->view('index', $data);
+  }
+
   public function add_form(){
     $this->load->view('add.php');
   }
@@ -38,6 +43,7 @@ class Users extends CI_Controller {
     'first_name' => $this->input->post('first_name'),
     'last_name' => $this->input->post('last_name'),
     'nickname' => $this->input->post('nickname'),
+    'email' => $this->input->post('email'),
     'user_city' => $this->input->post('user_city'),
     'gender' => $this->input->post('gender'),
     'mobile' => $this->input->post('mobile'),

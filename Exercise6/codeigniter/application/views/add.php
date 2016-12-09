@@ -115,7 +115,7 @@
 
 		<h1 style="font-size:40px;margin-top:25px">ADD DATA</h1>
 		<div class="transbox" style="margin-top:-20px">
-			<form method="post">
+			<form method="post" action="<?php echo base_url();?>index.php/users/insert_user_db"> 
 			<p><a href="form-home.php"><strong>*back to main page*</strong></a>
 				<br>
 				<br>
@@ -133,7 +133,7 @@
 				<br>
 				<br>
 				Home: <br>
-				<input type="text" name="city_name" placeholder="City" required>
+				<input type="text" name="user_city" placeholder="City" required>
 				<br><br>
 				Gender: <br>
 				<input type="radio" name="gender" value="female" title="Female">&nbsp;<img src="<?php echo base_url();?>/images/female.png" style="width:35px;height:30px" title="Female">
