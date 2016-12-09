@@ -70,7 +70,7 @@
 			<a href="galleryc.php" targetsel>GALLERY &nbsp;
 			<a href="contactc.php" targetsel>CONTACT &nbsp;
 			<a href="trivia.php" targetsel>TRIVIA &nbsp;
-      <a href="form-home.php" targetsel>FORM</a>
+      <a href="index.php" targetsel>FORM</a>
 		<hr>
 		</center>
 		<br>
