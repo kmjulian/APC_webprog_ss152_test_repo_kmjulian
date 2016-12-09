@@ -72,7 +72,7 @@
 	<body>
 		<head>
 		<div style="padding-left:520px; padding-right:500px; padding-top: 250px">
-	<img src="http://fontmeme.com/embed.php?text=Victorious&name=BrockScript.ttf&size=30&style_color=000000" alt="Signature Fonts" style="padding-top:7%"></a>
+	<img src="vic.png" alt="Signature Fonts" style="padding-top:7%"></a>
 		</div>
 		</head>
 		<br>
