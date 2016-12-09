@@ -10,4 +10,19 @@ class Users extends CI_Controller {
     $this->load->view('add.php');
   }
 
+   public function insert_user_db(){
+    $udata['fname'] = $this->input->post('fname');
+    $udata['lname'] = $this->input->post('lname');
+    $udata['nickname'] = $this->input->post('nickname');
+    $udata['email'] = $this->input->post('email');
+    $udata['homeAdd'] = $this->input->post('homeAdd');
+    $udata['gender'] = $this->input->post('gender');
+    $udata['phoneNum'] = $this->input->post('phoneNum');
+    $udata['comment'] = $this->input->post('comment');
+    $res = $this->users_model->insert_users_to_db($udata);
+    if($res){
+      header('location:'.base_url()."index.php/users/".$this->index());
+    }
+  }
+
 }

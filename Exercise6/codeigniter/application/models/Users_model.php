@@ -10,5 +10,9 @@ class Users_model extends CI_Model {
 		return $query->result();
 	}
 
+	public function insert_users_to_db($data){
+		return $this->db->insert('users', $data);
+	}
+
 }
 ?>
