@@ -25,4 +25,30 @@ class Users extends CI_Controller {
     }
   }
 
+    // OPEN EDIT FORM WITH DATA
+  function show_users_id() {
+    $id = $this->uri->segment(3);
+    $data['users'] = $this->users_model->show_users();
+    $data['single_users'] = $this->users_model->show_users_id($id);
+    $this->load->view('view_edit', $data);
+  }
+  function update_users_id1() {
+    $id= $this->input->post('did');
+    $data = array(
+    'first_name' => $this->input->post('first_name'),
+    'last_name' => $this->input->post('last_name'),
+    'nickname' => $this->input->post('nickname'),
+    'user_city' => $this->input->post('user_city'),
+    'gender' => $this->input->post('gender'),
+    'mobile' => $this->input->post('mobile'),
+    'comment' => $this->input->post('comment')
+    );
+    $this->users_model->update_users_id1($id, $data);
+    $this->show_users_id();
+    $this->load->helper('url');
+    redirect('index.php/users/index', 'refresh');
+  }
+  public function delete($user_id){
+    $this->users_model->delete_a_user($user_id);
+  }
 }
