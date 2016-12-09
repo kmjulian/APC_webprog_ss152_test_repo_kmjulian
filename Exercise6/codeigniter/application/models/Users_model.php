@@ -14,5 +14,10 @@ class Users_model extends CI_Model {
 		return $this->db->insert('users', $data);
 	}
 
+	public function getById($user_id){
+		$query = $this->db->get_where('users', array('user_id' => $user_id));
+		return $query->row_array();
+	}
+
 }
 ?>
