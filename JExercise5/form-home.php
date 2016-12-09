@@ -120,19 +120,17 @@ if(isset($_GET['delete_id']))
   			<a href="trivia.php" targetsel>TRIVIA &nbsp;
         <a href="form-home.php" targetsel>FORM</a>
   		<hr>
-  		<hr size="3px" width="58%" color="black">
-  		<hr	size="3px" width="58%" color="black">
 
 		<h1 style="font-size: 40px;margin-top:25px"> FORM </h1>
 		<table cellspacing="7" style="margin-top: -20px">
 			<tr><center>
-				<th style="font-size:30"><b>Name</b></th>
-				<th style="font-size:30"><b>Nickname</b></th>
-				<th style="font-size:30"><b>E-mail</th>
-				<th style="font-size:30"><b>Home</b></th>
-				<th style="font-size:30"><b>Gender</th>
-				<th style="font-size:30"><b>Mobile</th>
-				<th style="font-size:30"><b>Comment</th>
+				<th style="font-size:20"><b>Name</b></th>
+				<th style="font-size:20"><b>Nickname</b></th>
+				<th style="font-size:20"><b>E-mail</th>
+				<th style="font-size:20"><b>Home</b></th>
+				<th style="font-size:20"><b>Gender</th>
+				<th style="font-size:20"><b>Mobile</th>
+				<th style="font-size:20"><b>Comment</th>
 			</center></tr>
 			<?php
 				$sql_query="SELECT * FROM users";
@@ -163,10 +161,12 @@ if(isset($_GET['delete_id']))
 			?>
 			<tr><td style="border:none; background:none">&nbsp;</td></tr>
 			<tr>
-				<th colspan="9" style="text-align:center" class = "add"><a href="add.php">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;add data here&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></th>
+				<th colspan="9" style="text-align:center" class = "add"><a href="add.php"> add date here </a></th>
 			</tr>
 		</table>
-
+    <br>
+    <br>
+    <br>
     <footer>
       <center>
         <b><p style="color:Black;margin-bottom:0.1em;margin-top:0.1em;font-size:25px;font-family:"Arial Black", Gadget, sans-serif;">GET SOCIAL</b></p>
