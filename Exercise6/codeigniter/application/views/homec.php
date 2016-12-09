@@ -4,7 +4,6 @@
 	</title>
 		<style>
 		body {
-			background-image: url("Background.jpg");
 			background-repeat: no repeat;
 			background-attachment: fixed;
 			background-position: center;
@@ -51,10 +50,10 @@
 
 		}
 		</style>
-	<body>
+	<body background="<?php echo base_url();?>/images/Background.jpg">
 		<head>
 		<div style="padding-left:520px; padding-right:500px; padding-top: 250px">
-		<img src="vic.png" alt="Signature Fonts" style="padding-top:7%"></a>
+		<img src="<?php echo base_url();?>/images/vic.png" alt="Signature Fonts" style="padding-top:7%"></a>
 		</div>
 		</head>
 		<br>
@@ -74,8 +73,8 @@
 				<br>
 					<br>
 		<p style="padding:2px; border:1px; text-align: center">
-			<img src="5.jpg" style="width:135px;height:135px"><img src="6.jpg" style="width:135px;height:135px"><img src="8.jpg" style="width:135px;height:135px"><img src="9.jpg" style="width:135px;height:135px">
-			<img src="10.jpg" style="width:135px;height:135px"><img src="12.jpg" style="width:135px;height:135px"><img src="13.jpg" style="width:135px;height:135px"><img src="14.jpg" style="width:135px;height:135px">
+			<img src="<?php echo base_url();?>/images/5.jpg" style="width:135px;height:135px"><img src="<?php echo base_url();?>/images/6.jpg" style="width:135px;height:135px"><img src="<?php echo base_url();?>/images/8.jpg" style="width:135px;height:135px"><img src="<?php echo base_url();?>/images/9.jpg" style="width:135px;height:135px">
+			<img src="<?php echo base_url();?>/images/10.jpg" style="width:135px;height:135px"><img src="<?php echo base_url();?>/images/12.jpg" style="width:135px;height:135px"><img src="<?php echo base_url();?>/images/13.jpg" style="width:135px;height:135px"><img src="<?php echo base_url();?>/images/14.jpg" style="width:135px;height:135px">
 		</p>
 		<br>
 			<br>
@@ -83,8 +82,8 @@
 	<footer>
 		<center>
 			<b><p style="color:Black;margin-bottom:0.1em;margin-top:0.1em;font-size:25px;font-family:"Arial Black", Gadget, sans-serif;">GET SOCIAL</b></p>
-			<center><p style="margin-top:0.1em;margin-bottom:0.1em"><a href="https://www.facebook.com/kylajuliannn"target="_blank"><img a src="fblogo.png" style="width:50px;height:50px"></a>&nbsp;&nbsp;&nbsp;&nbsp;
-			<a href="https://www.instagram.com/kylajuliannn/?hl=en"target="_blank"><img src="iglogo.png" style="width:50px;height:50px;"></a></center>
+			<center><p style="margin-top:0.1em;margin-bottom:0.1em"><a href="https://www.facebook.com/kylajuliannn"target="_blank"><img a src="<?php echo base_url();?>/images/fblogo.png" style="width:50px;height:50px"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+			<a href="https://www.instagram.com/kylajuliannn/?hl=en"target="_blank"><img src="<?php echo base_url();?>/images/iglogo.png" style="width:50px;height:50px;"></a></center>
 			<p style="font-size:12px;color:Black;font-family:"Arial Black", Gadget, sans-serif;margin-top:0.1em"> Copyright 2016 VICTORIOUS. </p>
 		</center>
 	</footer>
