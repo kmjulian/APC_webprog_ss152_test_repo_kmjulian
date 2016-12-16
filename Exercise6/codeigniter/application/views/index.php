@@ -6,7 +6,6 @@
 	</title>
   <style>
     body {
-      background-image: url("Background.jpg");
       background-repeat: no repeat;
       background-attachment: fixed;
       background-position: center;
@@ -93,10 +92,10 @@
 		 }
 		}
 	</script>
-  	<body>
+	<body background="<?php echo base_url();?>/images/Background.jpg">
       <head>
   		<div style="padding-left:520px; padding-right:500px; padding-top: 250px">
-  		<img src="vic.png" alt="Signature Fonts" style="padding-top:7%"></a>
+  		<img src="<?php echo base_url();?>/images/vic.png" alt="Signature Fonts" style="padding-top:7%"></a>
   		</div>
   		</head>
   		<br>
