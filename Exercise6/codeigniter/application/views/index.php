@@ -152,8 +152,8 @@
     <hr>
   	<footer style="margin-bottom:0.2em; margin-top: 0.2em">
   		<p style="padding:2px; border:3px; text-align: center">
-  			<img src="5.jpg" style="width:135px;height:135px"><img src="6.jpg" style="width:135px;height:135px"><img src="8.jpg" style="width:135px;height:135px"><img src="9.jpg" style="width:135px;height:135px">
-  			<img src="10.jpg" style="width:135px;height:135px"><img src="12.jpg" style="width:135px;height:135px"><img src="13.jpg" style="width:135px;height:135px"><img src="14.jpg" style="width:135px;height:135px">
+  			<img src="<?php echo base_url();?>/images/5.jpg" style="width:135px;height:135px"><img src="<?php echo base_url();?>/images/6.jpg" style="width:135px;height:135px"><img src="<?php echo base_url();?>/images/8.jpg" style="width:135px;height:135px"><img src="<?php echo base_url();?>/images/9.jpg" style="width:135px;height:135px">
+  			<img src="<?php echo base_url();?>/images/10.jpg" style="width:135px;height:135px"><img src="<?php echo base_url();?>/images/12.jpg" style="width:135px;height:135px"><img src="<?php echo base_url();?>/images/13.jpg" style="width:135px;height:135px"><img src="<?php echo base_url();?>/images/14.jpg" style="width:135px;height:135px">
   		</p>
   	</footer>
   	<hr>
