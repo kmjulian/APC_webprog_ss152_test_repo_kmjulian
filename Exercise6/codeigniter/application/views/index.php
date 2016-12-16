@@ -122,33 +122,28 @@
 				<th style="font-size:20"><b>Mobile</th>
 				<th style="font-size:20"><b>Comment</th>
 			</center></tr>
-			<?php
-				$sql_query="SELECT * FROM users";
-				$result_set=mysqli_query($con,$sql_query);
-				while($row=mysqli_fetch_row($result_set))
-				{
-			?>
-				<tr>
-					<td><b><?php echo $row[2],'</b>, ', $row[1]; ?></td>
-					<!-- Name = First Name + Last Name -->
-					<td><?php echo $row[3]; ?></td>
-					<!-- Nickname -->
-					<td><?php echo $row[4]; ?></td>
-					<!-- Email -->
-					<td><?php echo $row[5]; ?></td>
-					<!-- Address -->
-					<td><?php echo $row[6]; ?></td>
-					<!-- Gender-->
-					<td><?php echo $row[7]; ?></td>
-					<!-- Mobile -->
-					<td><?php echo $row[8]; ?></td>
+
+			 <?php foreach ($user_list as $u_key){ ?>
+
+			        <tr>
+			        <td><?php echo $u_key->first_name; ?></td>
+			        <td><?php echo $u_key->last_name; ?></td>
+			        <td><?php echo $u_key->nickname; ?></td>
+			        <td><?php echo $u_key->email; ?></td>
+			        <td><?php echo $u_key->user_city; ?></td>
+			        <td><?php echo $u_key->gender; ?></td>
+			        <td><?php echo $u_key->mobile; ?></td>
+			        <td><?php echo $u_key->comment; ?></td>
 					<!-- Comment -->
-					<td align="center"><a href="javascript:edt_id('<?php echo $row[0]; ?>')"><img src="edit.png" style="width:30px;height:30px" title="edit" align="EDIT"></a></td>
-					<td class = "delete" align="center"><a href="javascript:delete_id('<?php echo $row[0]; ?>')"><img src="delete.png" style="width:30px;height:30px" title="delete" align="DELETE"></a></td>
-				</tr>
-			<?php
-			}
-			?>
+					 <td align="center"><a href="<?php echo base_url() . "index.php/users/show_users_id/" . $u_key->user_id; ?>" onClick="show_confirm('edit',<?php echo $u_key->user_id;?>)"><img src="<?php echo base_url();?>/images/edit.png" style="width: 20px"></img></a></td>
+
+
+        <td align="center"><a href="#" onClick="show_confirm('delete',<?php echo $u_key->user_id;?>)"><img src="<?php echo base_url();?>/images/delete.png" style="width: 20px"></img></a></td>
+
+        </tr>
+
+        <?php }?>
+
 			<tr><td style="border:none; background:none">&nbsp;</td></tr>
 			<tr>
 				<th colspan="9" style="text-align:center" class = "add"><a href="add.php"> add data here </a></th>

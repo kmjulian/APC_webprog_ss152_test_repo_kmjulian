@@ -35,7 +35,7 @@ class Users extends CI_Controller {
     $id = $this->uri->segment(3);
     $data['users'] = $this->users_model->show_users();
     $data['single_users'] = $this->users_model->show_users_id($id);
-    $this->load->view('view_edit', $data);
+    $this->load->view('edit', $data);
   }
   function update_users_id1() {
     $id= $this->input->post('did');
