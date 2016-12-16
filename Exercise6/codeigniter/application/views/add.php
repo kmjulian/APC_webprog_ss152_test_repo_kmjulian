@@ -103,19 +103,19 @@
 			<div style = "background:#FBE7DC;">
 			<center>
 			<hr>
-				<a href="homec.php" targetsel>HOME &nbsp;
-				<a href="aboutc.php" targetsel>ABOUT &nbsp;
-				<a href="galleryc.php" targetsel>GALLERY &nbsp;
-				<a href="contactc.php" targetsel>CONTACT &nbsp;
-				<a href="trivia.php" targetsel>TRIVIA &nbsp;
-				<a href="index.php" targetsel>FORM</a>
+			<a href="<?php echo base_url('index.php/Home/index')?>" targetsel>HOME &nbsp;
+			<a href="<?php echo base_url('index.php/About/index')?>" targetsel>ABOUT &nbsp;
+			<a href="<?php echo base_url('index.php/Gallery/index')?>" targetsel>GALLERY &nbsp;
+			<a href="<?php echo base_url('index.php/Contact/index')?>" targetsel>CONTACT &nbsp;
+			<a href="<?php echo base_url('index.php/Trivia/index')?>" targetsel>TRIVIA &nbsp;
+     	<a href="<?php echo base_url('index.php/Users/add_form')?>" targetsel>FORM</a>
 			<hr>
 		<hr size="3px" width="58%" color="black">
 		<hr	size="3px" width="58%" color="black">
 
 		<h1 style="font-size:40px;margin-top:25px">ADD DATA</h1>
 		<div class="transbox" style="margin-top:-20px">
-			<form method="post" action="<?php echo base_url();?>index.php/users/insert_user_db"> 
+			<form method="post" action="<?php echo base_url();?>index.php/users/insert_user_db">
 			<p><a href="form-home.php"><strong>*back to main page*</strong></a>
 				<br>
 				<br>

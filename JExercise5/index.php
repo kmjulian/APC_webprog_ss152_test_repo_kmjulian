@@ -99,7 +99,7 @@ if(isset($_GET['delete_id']))
 		{
 		 if(confirm('Delete this entry?'))
 		 {
-		  window.location.href='form-home.php?delete_id='+id;
+		  window.location.href='index.php?delete_id='+id;
 		 }
 		}
 	</script>
@@ -118,7 +118,7 @@ if(isset($_GET['delete_id']))
   			<a href="galleryc.php" targetsel>GALLERY &nbsp;
   			<a href="contactc.php" targetsel>CONTACT &nbsp;
   			<a href="trivia.php" targetsel>TRIVIA &nbsp;
-        <a href="form-home.php" targetsel>FORM</a>
+        <a href="add.php" targetsel>FORM</a>
   		<hr>
 
 		<h1 style="font-size: 40px;margin-top:25px"> FORM </h1>

@@ -62,7 +62,7 @@
 			?>
 				<script type="text/javascript">
 				alert('Data Are Updated Successfully');
-				window.location.href='form-home.php';
+				window.location.href='index.php';
 				</script>
 			<?php
 			}else{
@@ -76,7 +76,7 @@
 		}
 	}
 	if(isset($_POST['btn-cancel'])){
-		header("Location: form-home.php");
+		header("Location: edit.php");
 	}
 	function test_input($data) {
 		$data = trim($data);

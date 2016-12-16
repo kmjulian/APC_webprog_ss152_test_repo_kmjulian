@@ -102,12 +102,12 @@
   		<div style = "background:#FBE7DC;">
   		<center>
   		<hr>
-  			<a href="homec.php" targetsel>HOME &nbsp;
-  			<a href="aboutc.php" targetsel>ABOUT &nbsp;
-  			<a href="galleryc.php" targetsel>GALLERY &nbsp;
-  			<a href="contactc.php" targetsel>CONTACT &nbsp;
-  			<a href="trivia.php" targetsel>TRIVIA &nbsp;
-        <a href="form-home.php" targetsel>FORM</a>
+			<a href="<?php echo base_url('index.php/Home/index')?>" targetsel>HOME &nbsp;
+			<a href="<?php echo base_url('index.php/About/index')?>" targetsel>ABOUT &nbsp;
+			<a href="<?php echo base_url('index.php/Gallery/index')?>" targetsel>GALLERY &nbsp;
+			<a href="<?php echo base_url('index.php/Contact/index')?>" targetsel>CONTACT &nbsp;
+			<a href="<?php echo base_url('index.php/Trivia/index')?>" targetsel>TRIVIA &nbsp;
+     	<a href="<?php echo base_url('index.php/Users/add_form')?>" targetsel>FORM</a>
   		<hr>
 
 		<h1 style="font-size: 40px;margin-top:25px"> FORM </h1>

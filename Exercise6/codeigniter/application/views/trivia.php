@@ -144,7 +144,7 @@
 			<a href="<?php echo base_url('index.php/Gallery/index')?>" targetsel>GALLERY &nbsp;
 			<a href="<?php echo base_url('index.php/Contact/index')?>" targetsel>CONTACT &nbsp;
 			<a href="<?php echo base_url('index.php/Trivia/index')?>" targetsel>TRIVIA &nbsp;
-        <a href="index.php" targetsel>FORM</a>
+        <a href="<?php echo base_url('index.php/Users/add_form')?>" targetsel>FORM</a>
 			<hr>
 		</center>
 			</center>
