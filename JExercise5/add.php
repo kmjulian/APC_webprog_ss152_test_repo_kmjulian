@@ -1,43 +1,46 @@
 <?php
 	include_once 'dbconfig.php';
-	$first_nameErr = $last_nameErr = $nicknameErr = $emailErr = $city_nameErr = $genderErr = $mobileErr = $commentErr = "";
+	$first_nameErr = $last_nameErr = $nicknameErr = $emailErr = $city_nameErr = $genderErr = $mobileErr = $commentErr = $error = "";
+	$first_name = "";
+	$last_name = "";
+	$nickname = "";
+	$email = "";
+	$city_name = "";
+	$gender = "";
+	$mobile = "";
+	$comment = "";
+
 	if(isset($_POST['btn-save']))
 	{
-		$error = "";
+
 		$first_name = test_input($_POST["first_name"]);
 		// check if name only contains letters and whitespace
 		if (!preg_match("/^[a-zA-Z- ]*$/",$first_name)) {
 			$first_nameErr = "<br><em style='font-size:20px'>Only letters and white space allowed</em>";
-			$first_name = "";
-			$error = "firstname";
+			$error = "Err";
 		}
 
 		$last_name = test_input($_POST["last_name"]);
 		// check if name only contains letters and whitespace
 		if (!preg_match("/^[a-zA-Z ]*$/",$last_name)) {
 			$last_nameErr = "<br><em style='font-size:20px'>Only letters and white space allowed</em>";
-			$last_name = "";
-			$error = "lastname";
+			$error = "Err";
 		}
 
-	  	$nickname = test_input($_POST["nickname"]);
+	  $nickname = test_input($_POST["nickname"]);
 	  	if (!preg_match("/^[a-zA-Z ]*$/",$nickname)) {
 			$nicknameErr = "<br><em style='font-size:20px'>Only letters and white space allowed</em>";
-			$nickname = "";
-			$error = "nickname";
+			$error = "Err";
 		}
 
 		$email = test_input($_POST["email"]);
 		// check if e-mail address is well-formed
 		if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
 			$emailErr = "<br><em style='font-size:20px'>Invalid email format</em>";
-			$email = "";
-			$error = "email";
+			$error = "Err";
 		}
 
 		$city_name = test_input($_POST["city_name"]);
-
-		$comment = test_input($_POST["comment"]);
 
 		$gender = test_input($_POST["gender"]);
 
@@ -45,27 +48,29 @@
 
 		if(!preg_match("/^[0-9-]*$/",$mobile)){
 			$mobileErr = "<br><em style='font-size:20px'>&nbsp;Only numbers are allowed</em>";
-			$mobile = "";
-			$error = "mobile";
+			$error = "Err";
 		}
 
-		if($error === ""){
+				$comment = test_input($_POST["comment"]);
+
+		if($error != "Err"){
 			$sql_query = "INSERT INTO users(first_name,last_name,nickname,email,user_city,gender, mobile, comment) VALUES('$first_name','$last_name','$nickname','$email','$city_name','$gender','$mobile','$comment')";
-			if(mysqli_query($con,$sql_query)){
-				?>
-				<script type="text/javascript">
-				alert('Data input succesful');
-				window.location.href='form-home.php';
-				</script>
-				<?php
-			}else{
-				?>
-				<script type="text/javascript">
-				alert('error occured while inputting data');
-				</script>
-				<?php
-			}
 			// sql query for inserting data into database
+			if(mysqli_query($con,$sql_query))
+			{
+			?>
+				<script type="text/javascript">
+				alert('Data Are Inserted Successfully');
+				window.location.href='index.php';
+				</script>
+			<?php
+			}else{
+			?>
+				<script type="text/javascript">
+				alert('error occured while inserting data');
+				</script>
+			<?php
+			}
 		}
 	}
 	function test_input($data) {
@@ -154,22 +159,6 @@
 			background-color: rgba(255,255,255,.5);
 		}
 	</style>
-	<script type="text/javascript">
-		function edt_id(id)
-		{
-		 if(confirm('Sure to edit ?'))
-		 {
-		  window.location.href='edit_data.php?edit_id='+id;
-		 }
-		}
-		function delete_id(id)
-		{
-		 if(confirm('Sure to Delete ?'))
-		 {
-		  window.location.href='index.php?delete_id='+id;
-		 }
-		}
-	</script>
 	<body>
 		<body>
 			<head>
@@ -194,34 +183,34 @@
 		<h1 style="font-size:40px;margin-top:25px">ADD DATA</h1>
 		<div class="transbox" style="margin-top:-20px">
 			<form method="post">
-			<p><a href="form-home.php"><strong>*back to main page*</strong></a>
+			<p><a href="index.php"><strong>*back to main page*</strong></a>
 				<br>
 				<br>
 				First Name: <span class="error">* <?php echo $first_nameErr;?></span><br>
-				<input type="text" name="first_name" placeholder="First Name" required>
+				<input type="text" name="first_name" placeholder="First Name" value ="<?php echo $first_name; ?>" required>
 				<br><br>
 				Last Name: <span class="error">* <?php echo $last_nameErr;?></span><br>
-				<input type="text" name="last_name" placeholder="Last Name" required>
+				<input type="text" name="last_name" placeholder="Last Name"  value = "<?php echo $last_name; ?>" required>
 				<br><br>
 				Nickname: <span class="error">* <?php echo $nicknameErr;?></span><br>
-				<input type="text" name="nickname" placeholder="Nickname" required>
+				<input type="text" name="nickname" placeholder="Nickname"  value = "<?php echo $nickname; ?>" required>
 				<br><br>
 				Email: <span class="error">* <?php echo $emailErr;?></span><br>
-				<input type="text" name="email" placeholder="Email Address" required>
+				<input type="text" name="email" placeholder="Email Address" value = "<?php echo $email; ?>" required>
 				<br>
 				<br>
 				Home: <br>
-				<input type="text" name="city_name" placeholder="City" required>
+				<input type="text" name="city_name" placeholder="City"  value = "<?php echo $city_name; ?>" required>
 				<br><br>
 				Gender: <br>
-				<input type="radio" name="gender" value="female" title="Female">&nbsp;<img src="female.png" style="width:35px;height:30px" title="Female">
-				<input type="radio" name="gender" value="male" title="Male"><img src="male.png" style="width:30px;height:30px" title="Male">
+				<input type="radio" name="gender" <?php if (isset($gender) && $gender =="female") echo "checked";?> value="Female" required><img src="female.png" style="width:35px;height:30px" title="Female">
+				<input type="radio" name="gender" <?php if (isset($gender) && $gender =="male") echo "checked";?> value="Male"><img src="male.png" style="width:30px;height:30px" title="Male">
 				<br><br>
 				Mobile: <span class="error">* <?php echo $mobileErr;?></span><br>
-				<input type="text" name="mobile" placeholder="Mobile Num" required>
+				<input type="text" name="mobile" placeholder="Mobile Num"  value =" <?php echo $mobile; ?>" required>
 				<br><br>
 				Comment: <br>
-				<textarea name="comment" placeholder="insert comment here" rows="3" cols="30"></textarea>
+				<textarea name="comment" placeholder="insert comment here" rows="3" cols="30" value = "<?php echo $comment; ?>"></textarea>
 			</p>
 			<button type="submit" name="btn-save"><strong>SAVE</strong>
 			</form>
