@@ -123,7 +123,7 @@
 			<?php foreach ($single_users as $users): ?>
 			<form method="post" action="<?php echo base_url() . "index.php/users/update_users_id1"?>">
 				<p>
-					<input type="text" id="hide" name="did" value="<?php echo $users->$user_id; ?>">
+					<input type="text" id="hide" name="did" value="<?php echo $users->user_id; ?>">
 					First Name: <span class="error">* </span><br>
 					<input type="text" name="first_name" placeholder="First Name" value="<?php echo $users->first_name; ?>" required>
 					<br><br>
@@ -140,7 +140,7 @@
 					<input type="text" name="city_name" placeholder="City"  value="<?php echo $users->user_city; ?>" required>
 					<br><br>
 					Gender: <br>
-					<input type="radio" name="gender" <?php if (isset($gender) && $gender=="female") echo "checked";?> value="Female">&nbsp;<img src="female.png" style="width:35px;height:30px" title="Female">
+					<input type="radio" name="gender" <?php if (isset($gender) && $gender=="female") echo "checked";?> value="Female" required>&nbsp;<img src="female.png" style="width:35px;height:30px" title="Female">
 					<input type="radio" name="gender" <?php if (isset($gender) && $gender=="Male") echo "checked";?> value="Male" title="Male"><img src="male.png" style="width:30px;height:30px" title="Male">
 					<br><br>
 					Mobile: <span class="error">* </span><br>
