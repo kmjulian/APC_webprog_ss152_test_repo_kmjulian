@@ -117,8 +117,8 @@
 				<th style="font-size:20"><b>Nickname</b></th>
 				<th style="font-size:20"><b>E-mail</th>
 				<th style="font-size:20"><b>Home</b></th>
-				<th style="font-size:20"><b>Gender</th>
 				<th style="font-size:20"><b>Mobile</th>
+				<th style="font-size:20"><b>Gender</th>
 				<th style="font-size:20"><b>Comment</th>
 			</center></tr>
 
