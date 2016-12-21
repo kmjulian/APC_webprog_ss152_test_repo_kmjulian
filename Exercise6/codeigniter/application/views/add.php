@@ -116,7 +116,7 @@
 		<h1 style="font-size:40px;margin-top:25px">ADD DATA</h1>
 		<div class="transbox" style="margin-top:-20px">
 			<form method="post" action="<?php echo base_url();?>index.php/users/insert_user_db">
-			<p><a href="form-home.php"><strong>*back to main page*</strong></a>
+			<p><a href="<?php echo base_url('index.php/users/index')?>"><strong>*back to main page*</strong></a>
 				<br>
 				<br>
 				First Name: <span class="error">* </span><br>
