@@ -145,7 +145,7 @@
 
 			<tr><td style="border:none; background:none">&nbsp;</td></tr>
 			<tr>
-				<th colspan="9" style="text-align:center" class = "add"><a href="add.php"> add data here </a></th>
+				<th colspan="9" style="text-align:center" class = "add"><a href="<?php echo base_url('index.php/users/add_form')?>"> add data here </a></th>
 			</tr>
 		</table>
     <hr>
@@ -158,8 +158,8 @@
   	<hr>
   		<center>
   			<b><p style="color:Black;margin-bottom:0.1em;font-size:25px;font-family:"Arial Black", Gadget, sans-serif;">GET SOCIAL</b></p>
-  			<center><p style="margin-top:0.1em;margin-bottom:0.1em"><a href="https://www.facebook.com/kylajuliannn"target="_blank"><img a src="fblogo.png" style="width:50px;height:50px"></a>&nbsp;&nbsp;&nbsp;&nbsp;
-  			<a href="https://www.instagram.com/kylajuliannn/?hl=en"target="_blank"><img src="iglogo.png" style="width:50px;height:50px;"></a></center>
+  			<center><p style="margin-top:0.1em;margin-bottom:0.1em"><a href="https://www.facebook.com/kylajuliannn"target="_blank"><img a src="<?php echo base_url();?>/images/fblogo.png" style="width:50px;height:50px"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+  			<a href="https://www.instagram.com/kylajuliannn/?hl=en"target="_blank"><img src="<?php echo base_url();?>/images/iglogo.png" style="width:50px;height:50px;"></a></center>
   			<p style="font-size:12px;color:Black;font-family"Arial Black", Gadget, sans-serif;margin-top:0.1em"> Copyright 2016 VICTORIOUS. </p>
   		</center>
 	</body>
